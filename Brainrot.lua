@@ -46,7 +46,7 @@ FarmPage:Paragraph("Instructions: Collect", "1. Select a character name from the
 
 FarmPage:Dropdown("Select Character", "CharDrop", BrainrotList, "Left", function(val)
 SelectedBrainrot = val
-end, "Sends string name to server")
+end, "Sends Brainrot to server")
 
 FarmPage:Toggle("Auto Collect Selected", "AutoColSel", false, "Spam selected name", "Left", function(state)
 AutoCollectBool = state
@@ -62,7 +62,7 @@ FarmPage:Button("Collect ALL Once", "Send name of every char once",  "Left", fun
 for _, name in pairs(BrainrotList) do
 CollectRequest:FireServer(name)
 end
-Library:Notification("Sent", "Strings sent for all chars!", 3)
+Library:Notification("Sent", "Sent for all chars!", 3)
 end)
 
 FarmPage:Toggle("Auto Collect ALL", "AutoColAll", false, "Spam all names loop", "Left", function(state)
@@ -81,7 +81,7 @@ FarmPage:Paragraph("Instructions: Blocks", "Select a pickaxe in your INVENTORY. 
 
  FarmPage:Dropdown("Select Pickaxe", "PickDrop", PickaxeList, "Right", function(val)
      SelectedPickaxe = val
- end, "Matches tool name")
+ end, "Matches pickaxe name")
 
  FarmPage:Toggle("Auto Block Break", "AutoBreak", false, "Breaks blocks", "Right", function(state)
      AutoBreakBool = state
