@@ -34,7 +34,7 @@ local AutoCollectBool = false
 local AutoBreakBool = false
 local AutoMineBool = false
 
-local Win = Library:Window("Brainrot Tycoon (String Mode)", "crown", "Original Remotes | No Sections", false)
+local Win = Library:Window("Dinas Hub Best", "crown", "Mine a Brainrot | Dinas Hub", false)
 
 local MainTab = Win:Tab("Farming", "pickaxe")
 local TeleportTab = Win:Tab("Teleports", "map")
